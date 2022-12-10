@@ -1,0 +1,8 @@
+*.pdf
+*.aux
+*.fls
+*.log
+*.synctex.gz
+*.fdb_latexmk
+*.sketch
+*.toc
