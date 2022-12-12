@@ -1,8 +1,13 @@
-*.pdf
+*.out
 *.aux
 *.fls
 *.log
 *.synctex.gz
 *.fdb_latexmk
 *.sketch
+*.bbl
+*.blg
 *.toc
+.DS_STORE
+
+Math In One TeX.bib

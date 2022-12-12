@@ -1,17 +1,179 @@
 \documentclass{article}
-
+\usepackage{hyperref}  
+\usepackage{graphicx}
+\usepackage{amsmath}
 
 \title{Math In One TEX}
 
 \begin{document}
+    \begin{titlepage}
+        \vspace*{\stretch{1}}
+        \begin{center}
 
-    \clearpage
-    \maketitle
+            \includegraphics[scale=0.4]{CoverArt.png} \\
+            \vspace{4ex}
+            \huge{\textsf{Just basicly a open-sourced, TeX-Based documentation of lots of math}}
+        \end{center}
+        \vspace{\stretch{2}}
+    \end{titlepage}
+
 
     \clearpage
     \tableofcontents
 
+    % Sec. 1
     \clearpage
     \section{Introduction}
         Math In One TEX aims to document as much mathematic knowledge in one TeX file (.tex) as possible. It is completely open-sourced, and all are welcome to modify and improve.
+    
+    
+    % Sec. 2
+    \clearpage
+    \section{Basic Constant Arithmatic}
+    This section covers basic arithmatic operations that is applied to most constants.
+
+
+    % Sec. 2 Subsec. 1
+    \subsection{Addition}
+    \label{section:addition}
+
+    % Sec. 2 Subsec. 1 Subsubsec. 1
+    \subsubsection{Definition}
+    \par
+    Addition of two or more value "results in the total amount or sum of those values combined."\cite{addition} It is the first operation, way back the stone age. There's a long ago story that tells of a shepherd who invented addtion for counting sheeps.
+    
+    % Sec. 2 Subsec. 1 Subsubsec. 2
+    \subsubsection{Pronunciation \& Notation}
+    $$a + b + c + ... $$
+    \par
+    The example above can be pronouced as:
+    \begin{itemize}
+        \item a plus b plus c plus ...
+        \item The sum of a, b, c, ...
+    \end{itemize}
+
+    % Sec. 2 Subsec. 1 Subsubsec. 3
+    \subsubsection{Laws \& Principles}
+    \begin{align*}
+        a + b &= b + a &\text{Commutative Law of Addition}\\
+        a + (b + c) &= a + b + c &\text{Associative Law of Addition}
+    \end{align*}
+
+    % Sec. 2 Subsec. 2
+    \subsection{Subtraction}
+    \label{section:subtraction}
+
+    % Sec. 2 Subsec. 2 Subsubsec. 1
+    \subsubsection{Definition}
+    \par
+    Subtraction "represents the operation of removing objects from a collection.", and "can also represent removing or decreasing physical and abstract quantities." \cite{subtraction} It is the reverse operation of \nameref{section:addition}.
+    \par
+
+    % Sec. 2 Subsec. 2 Subsubsec. 2
+    \subsubsection{Pronunciation \& Notation}
+    $$a - b - c - ... $$
+    The example above can be pronouced as:
+    \begin{itemize}
+        \item a minus b minus c minus ...
+        \item a subtracted by b subtracted by c subtracted by ...
+        \item c less then b less then a...
+    \end{itemize}
+
+    % Sec. 2 Subsec. 2 Subsubsec. 3
+    \subsubsection{Laws \& Principles}
+    \begin{align*}
+        a - b &= a + (-b) &\text{Basic Principle of Subtraction} \\
+        a - b &= -(b - a) &\text{Opposite of s Subtraction Polynomial} \\
+    \end{align*}
+
+    % Sec. 2 Subsec. 3
+    \subsection{Multiplication}
+    \label{section:multiplication}
+
+    % Sec. 2 Subsec. 3 Subsubsec. 1
+    \subsubsection{Definition}
+    \par
+    Multiplication derived from addition. Consider 
+    $$ a \times b $$
+    \par
+    It means 
+    $$ \underbrace{a + a + a + ...}_{b\ a's}$$
+    \par
+    Similarly
+    $$ a \times b \times c \times .... $$
+    \par
+    Means
+    $$ \underbrace{\underbrace{a + a + a + ...}_{b\ a's} + \underbrace{a + a + a + ...}_{b\ a's} + \underbrace{a + a + a + ...}_{b\ a's}}_{c\ (a \times b)}$$
+    \par
+
+    % Sec. 2 Subsec. 3 Subsubsec. 1
+    \subsubsection{Pronunciation \& Notation}
+    $$a \times b \times c \times ... $$
+    The example above can be pronouced as:
+    \begin{itemize}
+        \item a times b times c
+    \end{itemize}
+    The example above can be notated as:
+    \begin{itemize}
+        \item $a \times b \times c \times ...$
+        \item $a \cdot b \cdot c \cdot ...$
+        \item $abc...$
+    \end{itemize}
+
+
+    % Sec. 2 Subsec. 3 Subsubsec. 3
+    \subsubsection{Laws \& Principles}
+    \begin{align*}
+        a \cdot b &= b \cdot a &\text{Commutative Law of Multiplication}\\
+        a(b \cdot c) &= a \cdot b \cdot c &\text{Associative Law of Multiplication}
+    \end{align*}
+
+    % Sec. 2 Subsec. 4
+    \subsection{Division}
+    \label{section:divison}
+
+    % Sec. 2 Subsec. 4 Subsubsec. 1
+    \subsubsection{Definition}
+    \par
+    Division is the reverse operation of \nameref{section:multiplication}. It is "the process of calculating the number of times one number is contained within another."\cite{division} Consider
+    $$ a \cdot b = c$$
+    We can infer from the equation that b time a's value equals to c. Therefore, we can infer that
+    $$
+    \left\{
+        \begin{aligned}
+            c \div b = a\\
+            c \div a = b
+        \end{aligned}
+    \right.
+    $$
+    \par
+
+    % Sec. 2 Subsec. 3 Subsubsec. 1
+    \subsubsection{Pronunciation \& Notation}
+    $$a \div b \div c \div ... $$
+    The example above can be pronouced as:
+    \begin{itemize}
+        \item a divided by b divided by c ...
+        \item one $\mathrm c^{th}$ of one $\mathrm b^{th}$ of one $\mathrm a^{th}$ of ...
+    \end{itemize}
+    The example above can be notated as:
+    \begin{itemize}
+        \item $a \div b \div c \div ...$
+        \item $\frac{a}{\frac{b}{\frac{c}{...}}}$
+    \end{itemize}
+
+
+    % Sec. 2 Subsec. 3 Subsubsec. 3
+    \subsubsection{Laws \& Principles}
+    \begin{align*}
+        a \div b &= a \cdot \frac{1}{b} &\text{Basic Principle of Division}\\
+        a \div b &= \frac{1}{a \div b} &\text{Reciprocal of a Rational Expression}
+    \end{align*}
+    \clearpage
+
+    \clearpage
+    \bibliographystyle{apalike}
+    \bibliography{Citations}
+
 \end{document}
+

@@ -22,3 +22,40 @@ If your PDF viewer supports viewing the Table of Contents, just look for the sec
 
 ![Example of searching in side bars](https://raw.githubusercontent.com/makabaka1880/MathInOneTeX/main/READMEArt/1-2-1.png)
 ![Example of searching in side bars and displaying the section](https://raw.githubusercontent.com/makabaka1880/MathInOneTeX/main/READMEArt/1-2-2.png)
+
+## Template
+
+``` latex
+% Sec. <Section Number>
+\clearpage
+\section{Section Name}
+Description of this section...
+
+% Sec. <Section Number> Subsec. <Subsection Number>
+\subsection{<Subsection Name>}
+\label{section:<Lowercased Section Name>}
+
+% Sec. <Section Number> Subsec. <Subsection Number> Subsubsec. 1
+\subsection{Definition}
+Content here...
+
+% Sec. <Section Number> Subsec. <Subsection Number> Subsubsec. 2
+\subsection{Pronunciation \& Notation}
+Content here...
+
+% Sec. <Section Number> Subsec. <Subsection Number> Subsubsec. 3
+\subsection{Laws \& Principles}
+Content here...
+```
+
+## Current Table of Contents
+
+```
+1. Introduction
+2. Basic Constant Arithmatic
+    |
+    - Addition
+    - Subtraction
+    - Multiplication
+    - Division
+```
